@@ -127,7 +127,6 @@ hist(data$Son)
 
 
 
-#visualisations
 
 
 
@@ -200,18 +199,10 @@ plot(varImp(model1))
 install.packages("vip")
 library(vip)
 
-#exporting variable importance as a table
-lassovarimp <- as.data.frame(vi(model1))
-
-#keeping importance greater than 0
-
-lassovarimp1 <- lassovarimp %>% filter(Importance > 0)
 
 
-ggplot(varImp(model1))
+ggplot(varImp(model1), top = 20)
 
-ggplot(data = lassovarimp1, mappoing=aes(x=Importance, y=variable), stat = summary) +
-  geom_bar()  
 
 
 ####predicting the performance
@@ -442,6 +433,7 @@ modelDT <- train(absent_type~., data = train, method = 'rpart',
 
 
 modelDT
+
 
 #plot dt
 fancyRpartPlot(modelDT$finalModel, sub = NULL)
