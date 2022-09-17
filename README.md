@@ -5,8 +5,7 @@ This project was done as part of the MSc Business Analytics program at Queen's U
 
 Mode Results:
 
-<img width="452" alt="image" src="https://user-images.githubusercontent.com/113776928/190857923-006df6ef-3f8b-4cff-abff-8557730909cc.png">
-
+<img width="814" alt="Screenshot 2022-09-17 at 1 55 43 PM" src="https://user-images.githubusercontent.com/113776928/190857937-8d51a80f-89c6-4482-9a5e-fed835854e0d.png">
 
 
 This research analysed the probability of employees committing abnormal absents on Brazilian Courier Company data set. The best predictor of abnormal absences is found to be decision tree model. This result differs with previous researchers who found performance of other algorithms better than decision trees. This could be due to the difference of tuning parameters employed. Wahid et al. (2019) found the accuracy of 82% using Gradient Boosted, 80.4% for Random forest and 79% with Tree Ensemble and decision trees.  We found accuracy of 82% using LASSO logistic regression, XG boost and decision tree, and 80.9% for Random Forest. This shows that using grid search and 10-fold cross validation has yielded better predictive performance for most models. 
