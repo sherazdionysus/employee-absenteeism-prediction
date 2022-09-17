@@ -3,6 +3,12 @@ Predicting Employee Absenteeism using Machine Learning in R
 This project was done as part of the MSc Business Analytics program at Queen's University Belfast for the year 2021/22
 
 
+Mode Results:
+
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/113776928/190857923-006df6ef-3f8b-4cff-abff-8557730909cc.png">
+
+
+
 This research analysed the probability of employees committing abnormal absents on Brazilian Courier Company data set. The best predictor of abnormal absences is found to be decision tree model. This result differs with previous researchers who found performance of other algorithms better than decision trees. This could be due to the difference of tuning parameters employed. Wahid et al. (2019) found the accuracy of 82% using Gradient Boosted, 80.4% for Random forest and 79% with Tree Ensemble and decision trees.  We found accuracy of 82% using LASSO logistic regression, XG boost and decision tree, and 80.9% for Random Forest. This shows that using grid search and 10-fold cross validation has yielded better predictive performance for most models. 
 
 Nath et al. (2022) who analysed the same data set got predictive Accuracy of 93.2% on MLR, 88.7% on SVM and 86.9% on random forest. This shows that it is possible to achieve the predictive accuracy score of more than what we reported on the same data set and our models have further room for improvement. 
